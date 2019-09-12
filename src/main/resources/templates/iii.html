@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>用户列表</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>职位名称</th>
+        <th>职位性质</th>
+        <th>工作地点</th>
+        <th>发布时间</th>
+    </tr>
+    <tr th:each="user : ${list}">
+        <td th:text="${user.PosName}"></td>
+        <td th:text="${user.Department}"></td>
+        <td style="text-align:center;vertical-align:middle;" th:text="${user.WorkPlace}"></td>
+        <td th:text="${user.PublishTime}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
