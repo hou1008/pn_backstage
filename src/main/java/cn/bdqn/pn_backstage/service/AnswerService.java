@@ -5,7 +5,7 @@ import cn.bdqn.demo.pojo.Questions;
 
 import java.util.List;
 
-public interface QuestionsService {
+public interface AnswerService {
     List<Questions> getAll();
 
 }

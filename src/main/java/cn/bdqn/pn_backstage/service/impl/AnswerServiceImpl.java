@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service("questionsService")
-public class QuestionsServiceImpl implements QuestionsService {
+public class AnswerServiceImpl implements QuestionsService {
     @Autowired
     private QuestionsMapper questionsMapper;
     public List<Questions> getAll() {
