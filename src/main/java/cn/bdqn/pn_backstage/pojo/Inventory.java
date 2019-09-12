@@ -20,11 +20,11 @@ public class Inventory implements Serializable{
     }
 
 
-    public int gettId() {
+    public int getId() {
         return tId;
     }
 
-    public void settId(int tId) {
+    public void setId(int tId) {
         this.tId = tId;
     }
 

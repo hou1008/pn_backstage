@@ -2,25 +2,30 @@ package cn.bdqn.pn_backstage.controller;
 
 import cn.bdqn.pn_backstage.pojo.Inventory;
 import cn.bdqn.pn_backstage.service.InventoryService;
+import cn.bdqn.pn_backstage.service.impl.InventoryServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@Controller
+@Controller("/inventory")
 public class InventoryController {
+    @Autowired
     private InventoryService InventoryService;
-    @RequestMapping("/h")
-    public String pp(){
 
-        return "/resources/templates/index.html";
+    @RequestMapping("index")
+    public String a(){
+        System.out.println(1);
+        return "index";
     }
 
-    @RequestMapping("/he")
-    public String aaa(Model model){
-        List<Inventory> list=InventoryService.zha();
+    @RequestMapping("charts-7")
+    public String cha(Model model){
+       List<Inventory> list=InventoryService.zha();
         model.addAttribute("list","list");
-        return "charts-7.html";
+        return "charts-7";
     }
+
 }
