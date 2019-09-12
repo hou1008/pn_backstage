@@ -1,4 +1,10 @@
+
 package cn.bdqn.pn_backstage.service.impl;
+
+
+
+//package cn.bdqn.pn_backstage.service.impl;
+
 
 
 //import cn.bdqn.demo.mapper.QuestionsMapper;
@@ -9,11 +15,21 @@ package cn.bdqn.pn_backstage.service.impl;
 //
 //import java.util.List;
 
+
 //@Service("questionsService")
 public class AnswerServiceImpl  {
+
+//
+//@Service("questionsService")
+//public class AnswerServiceImpl implements QuestionsService {
+
 //    @Autowired
 //    private QuestionsMapper questionsMapper;
 //    public List<Questions> getAll() {
 //        return questionsMapper.findAll();
 //    }
+
 }
+
+//}
+
